@@ -1,0 +1,345 @@
+Sandbox_FR = {
+    Sandbox_WanderingZombies_Separator = "",
+    Sandbox_WanderingZombies = "Wandering Zombies: Zombies solitaires",
+
+
+
+    Sandbox_WanderingZombies_Destructive = "Destructeur",
+    Sandbox_WanderingZombies_Destructive_option1 = "Toujours",
+    Sandbox_WanderingZombies_Destructive_option2 = "À l'intérieur",
+    Sandbox_WanderingZombies_Destructive_option3 = "Aléatoire",
+    Sandbox_WanderingZombies_Destructive_option4 = "Jamais",
+    Sandbox_WanderingZombies_Destructive_tooltip = "Lorsque cette option est activée, les zombies solitaires utiliseront pathToSound, ce qui les amènera à attaquer les objets sur leur chemin.<br>Si vous utilisez 'Toujours' avec des clôtures destructibles (créer au début de la partie et non par le joueur), de nombreux zombies attaqueront les clôtures, ce qui rendra les choses plus faciles pendant un certain temps.",
+
+    Sandbox_WanderingZombies_MaxTravel = "Déplacement maximum",
+    Sandbox_WanderingZombies_MaxTravel_tooltip = "Les zombies essaieront de ne pas aller plus loin que ça<br>Ne tient pas compte de la nécessité de contourner les objets (murs, etc.)",
+
+    Sandbox_WanderingZombies_Counter = "Compteur",
+    Sandbox_WanderingZombies_Counter_option1 = "Toujours",
+    Sandbox_WanderingZombies_Counter_option2 = "À chaque cycle (appeler Tick) (soit: par trame)",
+    Sandbox_WanderingZombies_Counter_option3 = "Chaque minute (En temps de jeu)",
+    Sandbox_WanderingZombies_Counter_option4 = "Toutes les dix minutes (En temps de jeu)",
+    Sandbox_WanderingZombies_Counter_option5 = "Toutes les heures (En temps de jeu)",
+    Sandbox_WanderingZombies_Counter_tooltip = "Méthode utilisée pour les cycles",
+
+    Sandbox_WanderingZombies_NumTicks = "Cycles (appeler Ticks)",
+    Sandbox_WanderingZombies_NumTicks_tooltip = "Combien de fois l'option choisie pour le Compteur doit se produire avant qu'un zombie puisse commencer à errer",
+
+    Sandbox_WanderingZombies_RandTicks = "Cycles aléatoire",
+    Sandbox_WanderingZombies_RandTicks_tooltip = "Nombre maximum de cycles pouvant être ajoutés de manière aléatoire au paramètre ci-dessus",
+
+    Sandbox_WanderingZombies_DropdownStartHour = "Heure de début",
+    Sandbox_WanderingZombies_DropdownStartHour_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownStartHour_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownStartHour_tooltip = "À quelle heure les zombies solitaires doivent-ils commencer à errer au hasard<br>Si défini sur statique, utilise Heure de début : Max<br>Si défini sur aléatoire, l'heure de début est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Prend en charge la commutation d'ordre Min/Max, par exemple (18h -> 6h) : Min = 18, Max = 6<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinStartHour = "Heure de début: minimum",
+    Sandbox_WanderingZombies_MinStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxStartHour = "Heure de début: maximum",
+    Sandbox_WanderingZombies_MaxStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownTotalHours = "Heures totales",
+    Sandbox_WanderingZombies_DropdownTotalHours_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownTotalHours_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownTotalHours_tooltip = "Période de temps pendant laquelle les zombies solitaires sont autorisés à errer lorsque l'heure atteint l'heure de début<br>Si défini sur statique, utilise Heures totales : Max<br>Si défini sur aléatoire, le nombre total d'heures est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinTotalHours = "Heures totales: minimum",
+    Sandbox_WanderingZombies_MinTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxTotalHours = "Heures totales: maximum",
+    Sandbox_WanderingZombies_MaxTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownWanderChance = "Chance aléatoire",
+    Sandbox_WanderingZombies_DropdownWanderChance_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownWanderChance_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownWanderChance_tooltip = "Chance qu'a chaque zombie d'errer au hasard<br>Le jet de chance n'est lancé que lorsque le temps imparti est écoulé et que le zombie est prêt à bouger<br>Si défini sur statique, utilise Chance aléatoire : Max<br>Si défini sur aléatoire, la chance aléatoire est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinWanderChance = "Chance aléatoire: minimum",
+    Sandbox_WanderingZombies_MinWanderChance_tooltip = "Reportez-vous à l'info-bulle Chance aléatoire pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxWanderChance = "Chance aléatoire: maximum",
+    Sandbox_WanderingZombies_MaxWanderChance_tooltip = "Reportez-vous à l'info-bulle Chance aléatoire pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHomingStartHour = "Heure de début Traque",
+    Sandbox_WanderingZombies_DropdownHomingStartHour_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHomingStartHour_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHomingStartHour_tooltip = "À quelle heure les zombies solitaires doivent-ils commencer à se diriger vers le joueur le plus proche<br>Si défini sur statique, utilise Heure de début Traque : Max<br>Si défini sur aléatoire, l'heure de début de traque est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Prend en charge la commutation d'ordre Min/Max, par exemple (18h -> 6h) : Min = 18, Max = 6<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHomingStartHour = "Heure de début Traque: minimum",
+    Sandbox_WanderingZombies_MinHomingStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Traque pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHomingStartHour = "Heure de début Traque: maximum",
+    Sandbox_WanderingZombies_MaxHomingStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Traque pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHomingTotalHours = "Heures totales Traque",
+    Sandbox_WanderingZombies_DropdownHomingTotalHours_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHomingTotalHours_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHomingTotalHours_tooltip = "Période de temps pendant laquelle les zombies solitaires sont autorisés à se diriger vers le joueur lorsque l'heure atteint Heure de début Traque.<br>Si défini sur statique, utilise Heures totales Traque : Max<br>Si défini sur aléatoire, le nombre total d'heures de traque est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHomingTotalHours = "Heures totales Traque: minimum",
+    Sandbox_WanderingZombies_MinHomingTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Traque pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHomingTotalHours = "Heures totales Traque: maximum",
+    Sandbox_WanderingZombies_MaxHomingTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Traque pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownToPlayers = "Chance Traque",
+    Sandbox_WanderingZombies_DropdownToPlayers_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownToPlayers_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownToPlayers_tooltip = "Chance qu'a chaque zombie de se diriger vers le joueur le plus proche<br>Le jet de chance n'est lancé que lorsque le temps imparti est écoulé et que le zombie est prêt à bouger<br>Déplacement maximum s'applique aux zombies qui traque<br>Si défini sur statique, utilise Chance Traque : Max<br>Si défini sur aléatoire, la chance d'une traque est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinToPlayers = "Chance Traque: minimum",
+    Sandbox_WanderingZombies_MinToPlayers_tooltip = "Reportez-vous à l'info-bulle Chance Traque pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxToPlayers = "Chance Traque: maximum",
+    Sandbox_WanderingZombies_MaxToPlayers_tooltip = "Reportez-vous à l'info-bulle Chance Traque pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownRadius = "Rayon aléatoire",
+    Sandbox_WanderingZombies_DropdownRadius_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownRadius_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownRadius_tooltip = "Les zombies solitaires dans ce rayon ignorent les paramètres de traque<br>Si défini sur statique, utilise Rayon aléatoire : Max<br>Si défini sur aléatoire, le rayon aléatoire est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinRadius = "Rayon aléatoire: minimum",
+    Sandbox_WanderingZombies_MinRadius_tooltip = "Reportez-vous à l'info-bulle Rayon aléatoire pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxRadius = "Rayon aléatoire: maximum",
+    Sandbox_WanderingZombies_MaxRadius_tooltip = "Reportez-vous à l'info-bulle Rayon aléatoire pour plus d'informations.",
+
+    Sandbox_WanderingZombies_RadiusInterrupt = "Interruption de rayon aléatoire",
+    Sandbox_WanderingZombies_RadiusInterrupt_option1 = "Oui",
+    Sandbox_WanderingZombies_RadiusInterrupt_option2 = "Non",
+    Sandbox_WanderingZombies_RadiusInterrupt_option3 = "Aléatoire",
+    Sandbox_WanderingZombies_RadiusInterrupt_tooltip = "Lorsque cette option est activée, les zombies solitaires qui se dirigent vers le joueur voient leur chemin actuel interrompu dès qu'ils se trouvent dans le rayon aléatoire.",
+
+    Sandbox_WanderingZombies_DropdownFleeStartHour = "Heure de début Fuite",
+    Sandbox_WanderingZombies_DropdownFleeStartHour_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownFleeStartHour_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownFleeStartHour_tooltip = "À quelle heure les zombies solitaires doivent-ils fuir le joueur le plus proche<br>Si défini sur statique, utilise Heure de début Fuite : Max<br>Si défini sur aléatoire, l'heure de début de fuite est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Prend en charge la commutation d'ordre Min/Max, par exemple (18h -> 6h) : Min = 18, Max = 6<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinFleeStartHour = "Heure de début Fuite: minimum",
+    Sandbox_WanderingZombies_MinFleeStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxFleeStartHour = "Heure de début Fuite: maximum",
+    Sandbox_WanderingZombies_MaxFleeStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Fuite pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownFleeTotalHours = "Heures totales Fuite",
+    Sandbox_WanderingZombies_DropdownFleeTotalHours_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownFleeTotalHours_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownFleeTotalHours_tooltip = "Période de temps pendant laquelle les zombies solitaires sont autorisés à fuir le joueur lorsque l'heure atteint Heure de début Fuite<br>Si défini sur statique, utilise Heures totales Fuite : Max<br>Si défini sur aléatoire, le nombre total d'heures de fuite est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinFleeTotalHours = "Heures totales Fuite: minimum",
+    Sandbox_WanderingZombies_MinFleeTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxFleeTotalHours = "Heures totales Fuite: maximum",
+    Sandbox_WanderingZombies_MaxFleeTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Fuite pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownFleePlayers = "Chance de Fuite",
+    Sandbox_WanderingZombies_DropdownFleePlayers_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownFleePlayers_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownFleePlayers_tooltip = "Chance qu'a chaque zombie de s'éloigner du joueur le plus proche lorsqu'il se trouve à l'intérieur du rayon de fuite<br>Le jet de chance n'est lancé que lorsque le temps imparti est écoulé et que la horde est prête à bouger<br>Déplacement maximum s'applique aux hordes en fuite<br>Si défini sur statique, utilise Chance de Fuite : Max<br>Si défini sur aléatoire, la chance de fuite est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinFleePlayers = "Chance de Fuite: minimum",
+    Sandbox_WanderingZombies_MinFleePlayers_tooltip = "Reportez-vous à l'info-bulle Chance de Fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxFleePlayers = "Chance de Fuite: maximum",
+    Sandbox_WanderingZombies_MaxFleePlayers_tooltip = "Reportez-vous à l'info-bulle Chance de Fuite pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownFleeRadius = "Rayon de fuite",
+    Sandbox_WanderingZombies_DropdownFleeRadius_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownFleeRadius_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownFleeRadius_tooltip = "Les zombies solitaires dans ce rayon s'éloignent du joueur<br>Ceci est prioritaire sur Rayon aléatoire<br>Si défini sur statique, utilise Rayon de fuite : Max<br>Si défini sur aléatoire, le rayon de fuite est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinFleeRadius = "Rayon de fuite: minimum",
+    Sandbox_WanderingZombies_MinFleeRadius_tooltip = "Reportez-vous à l'info-bulle Rayon de fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxFleeRadius = "Rayon de fuite: maximum",
+    Sandbox_WanderingZombies_MaxFleeRadius_tooltip = "Reportez-vous à l'info-bulle Rayon de fuite pour plus d'informations.",
+
+
+
+    Sandbox_WanderingZombiesHordes = "Wandering Zombies: Hordes",
+
+
+
+    Sandbox_WanderingZombies_Hordes = "Hordes",
+    Sandbox_WanderingZombies_Hordes_tooltip = "Permet aux zombies de se former et de se déplacer ensemble en hordes<br>Les hordes utilisent les paramètres du groupe de ralliement pour fonctionner<br>Lorsque la taille du groupe de ralliement est définie sur 0, il n'y a aucune limite sur la taille de la horde.<br>Les Zeds se sépareront d'une horde s'ils ne peuvent pas rester dans la zone de déplacement du ralliement.<br>Les options ci-dessous n'ont aucun effet si ceci est désactivé.",
+
+    Sandbox_WanderingZombies_Merge = "Fusionner les hordes",
+    Sandbox_WanderingZombies_Merge_tooltip = "Autoriser les hordes à fusionner si dans la zone de déplacement du ralliement<br>La fusion des hordes ne respecte pas la taille du groupe de ralliement, elles peuvent atteindre n'importe quelle taille.",
+
+    Sandbox_WanderingZombies_MergeCooldown = "Temps nécessaire à une nouvelle fusion",
+    Sandbox_WanderingZombies_MergeCooldown_tooltip = "Lorsque cette option est supérieur à zéro, une horde est incapable de fusionner à nouveau jusqu'à ce que ce temps se soit écoulé.<br>Le temps est en millisecondes<br>La valeur est multipliée par le nombre de suiveurs d'une horde :<br>(Suiveurs de la horde) x (Temps nécessaire à une nouvelle fusion)",
+
+    Sandbox_WanderingZombies_GroupBySpeed = "Regrouper par vitesse",
+    Sandbox_WanderingZombies_GroupBySpeed_tooltip = "Lorsque cette option est activée, seuls les zombies partageant la même vitesse (sprinter, crawler, etc.) formeront une horde ensemble.<br>Fonctionne avec le mod Random Zombies, mais cela regroupera incorrectement les zombies jusqu'à ce que le mod Random Zombies mette à jour leur vitesse.",
+
+    Sandbox_WanderingZombies_AllowSprinters = "Autoriser les sprinters",
+    Sandbox_WanderingZombies_AllowSprinters_tooltip = "Lorsque cette option est activée, les sprinters sont autorisés à être dans des hordes",
+
+    Sandbox_WanderingZombies_AllowFastShamblers = "Autoriser les Shamblers rapides",
+    Sandbox_WanderingZombies_AllowFastShamblers_tooltip = "Lorsque cette option est activée, les shamblers rapides sont autorisés à être dans des hordes",
+
+    Sandbox_WanderingZombies_AllowShamblers = "Autoriser les Shamblers lents",
+    Sandbox_WanderingZombies_AllowShamblers_tooltip = "Lorsque cette option est activée, les shamblers lents sont autorisés à être dans des hordes",
+
+    Sandbox_WanderingZombies_AllowCrawlers = "Autoriser les Crawlers",
+    Sandbox_WanderingZombies_AllowCrawlers_tooltip = "Lorsque cette option est activée, les crawlers sont autorisés à être dans des hordes",
+
+    Sandbox_WanderingZombies_HordeDestructive = "Destructeur",
+    Sandbox_WanderingZombies_HordeDestructive_option1 = "Toujours",
+    Sandbox_WanderingZombies_HordeDestructive_option2 = "À l'intérieur",
+    Sandbox_WanderingZombies_HordeDestructive_option3 = "Aléatoire",
+    Sandbox_WanderingZombies_HordeDestructive_option4 = "Jamais",
+    Sandbox_WanderingZombies_HordeDestructive_tooltip = "Lorsque cette option est activée, les hordes utiliseront pathToSound, ce qui les amènera à attaquer les objets sur leur chemin.<br>Si vous utilisez 'Toujours' avec des clôtures destructibles (créer au début de la partie et non par le joueur), de nombreux zombies attaqueront les clôtures, ce qui rendra les choses plus faciles pendant un certain temps.",
+
+    Sandbox_WanderingZombies_HordeMaxTravel = "Déplacement maximum",
+    Sandbox_WanderingZombies_HordeMaxTravel_tooltip = "Les hordes essaieront de ne pas aller plus loin que ça<br>Ne tient pas compte de la nécessité de contourner les objets (murs, etc.)",
+
+    Sandbox_WanderingZombies_HordeCounter = "Compteur",
+    Sandbox_WanderingZombies_HordeCounter_option1 = "Toujours",
+    Sandbox_WanderingZombies_HordeCounter_option2 = "À chaque cycle (appeler Tick) (soit: par trame)",
+    Sandbox_WanderingZombies_HordeCounter_option3 = "Chaque minute (En temps de jeu)",
+    Sandbox_WanderingZombies_HordeCounter_option4 = "Toutes les dix minutes (En temps de jeu)",
+    Sandbox_WanderingZombies_HordeCounter_option5 = "Toutes les heures (En temps de jeu)",
+    Sandbox_WanderingZombies_HordeCounter_tooltip = "Méthode utilisée pour les cycles",
+
+    Sandbox_WanderingZombies_HordeNumTicks = "Cycles (appeler Ticks)",
+    Sandbox_WanderingZombies_HordeNumTicks_tooltip = "Combien de fois l'option choisie pour le Compteur doit se produire avant qu'une horde puisse commencer à errer",
+
+    Sandbox_WanderingZombies_HordeRandTicks = "Cycles aléatoire",
+    Sandbox_WanderingZombies_HordeRandTicks_tooltip = "Nombre maximum de cycles pouvant être ajoutés de manière aléatoire au paramètre ci-dessus",
+
+    Sandbox_WanderingZombies_FollowerTicks = "Cycles des suiveurs",
+    Sandbox_WanderingZombies_FollowerTicks_tooltip = "Des cycles supplémentaires sont ajoutés en fonction du nombre de suiveurs dans une horde :<br>(suiveurs dans une horde) x (Cycles des suiveurs)<br>Le résultat est arrondi à l'inférieur.",
+
+    Sandbox_WanderingZombies_DropdownHordeStartHour = "Heure de début",
+    Sandbox_WanderingZombies_DropdownHordeStartHour_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeStartHour_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeStartHour_tooltip = "À quelle heure les hordes doivent-elles commencer à errer au hasard<br>Si défini sur statique, utilise Heure de début : Max<br>Si défini sur aléatoire, l'heure de début est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Prend en charge la commutation d'ordre Min/Max, par exemple (18h -> 6h) : Min = 18, Max = 6<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHordeStartHour = "Heure de début: minimum",
+    Sandbox_WanderingZombies_MinHordeStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeStartHour = "Heure de début: maximum",
+    Sandbox_WanderingZombies_MaxHordeStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeTotalHours = "Heures totales",
+    Sandbox_WanderingZombies_DropdownHordeTotalHours_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeTotalHours_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeTotalHours_tooltip = "Période pendant laquelle les hordes sont autorisées à errer lorsque l'heure atteint Heure de début<br>Si défini sur statique, utilise Heures totales : Max<br>Si défini sur aléatoire, le nombre total d'heures est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHordeTotalHours = "Heures totales: minimum",
+    Sandbox_WanderingZombies_MinHordeTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeTotalHours = "Heures totales: maximum",
+    Sandbox_WanderingZombies_MaxHordeTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeWanderChance = "Chance aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeWanderChance_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeWanderChance_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeWanderChance_tooltip = "Chance que chaque horde a d'errer au hasard<br>Le jet de chance n'est lancé que lorsque le temps imparti est écoulé et que la horde est prête à bouger<br>Si défini sur statique, utilise Chance aléatoire : Max<br>Si défini sur aléatoire, la chance aléatoire est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinHordeWanderChance = "Chance aléatoire: minimum",
+    Sandbox_WanderingZombies_MinHordeWanderChance_tooltip = "Reportez-vous à l'info-bulle Chance aléatoire pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeWanderChance = "Chance aléatoire: maximum",
+    Sandbox_WanderingZombies_MaxHordeWanderChance_tooltip = "Reportez-vous à l'info-bulle Chance aléatoire pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeHomingStartHour = "Heure de début Traque",
+    Sandbox_WanderingZombies_DropdownHordeHomingStartHour_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeHomingStartHour_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeHomingStartHour_tooltip = "À quelle heure les hordes doivent-elles commencer à se diriger vers le joueur le plus proche<br>Si défini sur statique, utilise Heure de début Traque : Max<br>Si défini sur aléatoire, l'heure de début de traque est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Prend en charge la commutation d'ordre Min/Max, par exemple (18h -> 6h) : Min = 18, Max = 6<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHordeHomingStartHour = "Heure de début Traque: minimum",
+    Sandbox_WanderingZombies_MinHordeHomingStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Traque pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeHomingStartHour = "Heure de début Traque: maximum",
+    Sandbox_WanderingZombies_MaxHordeHomingStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Traque pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeHomingTotalHours = "Heures totales Traque",
+    Sandbox_WanderingZombies_DropdownHordeHomingTotalHours_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeHomingTotalHours_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeHomingTotalHours_tooltip = "Période pendant laquelle les hordes sont autorisées à se diriger vers le joueur lorsque l'heure atteint Heure de début Traque<br>Si défini sur statique, utilise Heures totales Traque : Max<br>Si défini sur aléatoire, le nombre total d'heures de traque est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHordeHomingTotalHours = "Heures totales Traque: minimum",
+    Sandbox_WanderingZombies_MinHordeHomingTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Traque pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeHomingTotalHours = "Heures totales Traque: maximum",
+    Sandbox_WanderingZombies_MaxHordeHomingTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Traque pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeToPlayers = "Chance Traque",
+    Sandbox_WanderingZombies_DropdownHordeToPlayers_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeToPlayers_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeToPlayers_tooltip = "Chance qu'a chaque horde de se diriger vers le joueur le plus proche<br>Le jet de chance n'est lancé que lorsque le temps imparti est écoulé et que la horde est prête à bouger<br>Max Travel applies to homing hordes<br>Si défini sur statique, utilise Chance Traque : Max<br>Si défini sur aléatoire, la chance d'une traque est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinHordeToPlayers = "Chance Traque: minimum",
+    Sandbox_WanderingZombies_MinHordeToPlayers_tooltip = "Reportez-vous à l'info-bulle Chance Traque pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeToPlayers = "Chance Traque: maximum",
+    Sandbox_WanderingZombies_MaxHordeToPlayers_tooltip = "Reportez-vous à l'info-bulle Chance Traque pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeRadius = "Rayon aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeRadius_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeRadius_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeRadius_tooltip = "Les hordes à l'intérieur de ce rayon ignorent les paramètres de traque<br>Si défini sur statique, utilise Rayon aléatoire : Max<br>Si défini sur aléatoire, le rayon aléatoire est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinHordeRadius = "Rayon aléatoire: minimum",
+    Sandbox_WanderingZombies_MinHordeRadius_tooltip = "Reportez-vous à l'info-bulle Rayon aléatoire pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeRadius = "Rayon aléatoire: maximum",
+    Sandbox_WanderingZombies_MaxHordeRadius_tooltip = "Reportez-vous à l'info-bulle Rayon aléatoire pour plus d'informations.",
+
+    Sandbox_WanderingZombies_HordeRadiusInterrupt = "Interruption de rayon aléatoire",
+    Sandbox_WanderingZombies_HordeRadiusInterrupt_option1 = "Oui",
+    Sandbox_WanderingZombies_HordeRadiusInterrupt_option2 = "Non",
+    Sandbox_WanderingZombies_HordeRadiusInterrupt_option3 = "Aléatoire",
+    Sandbox_WanderingZombies_HordeRadiusInterrupt_tooltip = "Lorsque cette option est activée, les hordes qui se dirigent vers le joueur voient leur chemin actuel interrompu dès qu'elles se trouvent à l'intérieur du rayon aléatoire.",
+
+    Sandbox_WanderingZombiesHordesCont = "Wandering Zombies: Hordes Suite"
+
+    Sandbox_WanderingZombies_DropdownHordeFleeStartHour = "Heure de début Fuite",
+    Sandbox_WanderingZombies_DropdownHordeFleeStartHour_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeFleeStartHour_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeFleeStartHour_tooltip = "A quelle heure les hordes doivent-elles fuir le joueur le plus proche<br>Si défini sur statique, utilise Heure de début Fuite : Max<br>Si défini sur aléatoire, l'heure de début de fuite est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Prend en charge la commutation d'ordre Min/Max, par exemple (18h -> 6h) : Min = 18, Max = 6<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHordeFleeStartHour = "Heure de début Fuite: minimum",
+    Sandbox_WanderingZombies_MinHordeFleeStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeFleeStartHour = "Heure de début Fuite: maximum",
+    Sandbox_WanderingZombies_MaxHordeFleeStartHour_tooltip = "Reportez-vous à l'info-bulle Heure de début Fuite pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeFleeTotalHours = "Heures totales Fuite",
+    Sandbox_WanderingZombies_DropdownHordeFleeTotalHours_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeFleeTotalHours_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeFleeTotalHours_tooltip = "Période de temps pendant laquelle les hordes sont autorisées à fuir le joueur lorsque l'heure atteint Heure de début Fuite<br>Si défini sur statique, utilise Heures totales Fuite : Max<br>Si défini sur aléatoire, le nombre total d'heures de fuite est aléatoire une fois la période écoulée en utilisant les valeurs ci-dessous (incluses)<br>Plusieurs périodes d'activité peuvent survenir au cours d'une même journée<br>Les périodes d'activité peuvent s'enchaîner, par exemple :<br>Heure de début min : 18, Heure de début max : 6 (18h -> 6h)<br>Total d'heures min : 0, Total d'heures max : 12<br>Ce qui précède peut conduire à une période d'activité de 24 heures si l'heure de début est définie aléatoirement à 6 heures du matin et si le nombre total d'heures est défini aléatoirement à 12.",
+
+    Sandbox_WanderingZombies_MinHordeFleeTotalHours = "Heures totales Fuite: minimum",
+    Sandbox_WanderingZombies_MinHordeFleeTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeFleeTotalHours = "Heures totales Fuite: maximum",
+    Sandbox_WanderingZombies_MaxHordeFleeTotalHours_tooltip = "Reportez-vous à l'info-bulle Heures totales Fuite pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeFleePlayers = "Chance de Fuite",
+    Sandbox_WanderingZombies_DropdownHordeFleePlayers_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeFleePlayers_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeFleePlayers_tooltip = "Chance qu'a chaque horde de s'éloigner du joueur le plus proche lorsqu'elle se trouve à l'intérieur du rayon de fuite<br>Le jet de chance n'est lancé que lorsque le temps imparti est écoulé et que la horde est prête à bouger<br>Déplacement maximum s'applique aux hordes en fuite<br>Si défini sur statique, utilise Chance de Fuite : Max<br>Si défini sur aléatoire, la chance de fuite est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinHordeFleePlayers = "Chance de Fuite: minimum",
+    Sandbox_WanderingZombies_MinHordeFleePlayers_tooltip = "Reportez-vous à l'info-bulle Chance de Fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeFleePlayers = "Chance de Fuite: maximum",
+    Sandbox_WanderingZombies_MaxHordeFleePlayers_tooltip = "Reportez-vous à l'info-bulle Chance de Fuite pour plus d'informations.",
+
+    Sandbox_WanderingZombies_DropdownHordeFleeRadius = "Rayon de fuite",
+    Sandbox_WanderingZombies_DropdownHordeFleeRadius_option1 = "Statique",
+    Sandbox_WanderingZombies_DropdownHordeFleeRadius_option2 = "Aléatoire",
+    Sandbox_WanderingZombies_DropdownHordeFleeRadius_tooltip = "Les hordes à l'intérieur de ce rayon s'éloignent du joueur<br>Ceci est prioritaire sur Rayon aléatoire<br>Si défini sur statique, utilise Rayon de fuite : Max<br>Si défini sur aléatoire, le rayon de fuite est aléatoire une fois par jour en utilisant les valeurs ci-dessous (incluses)",
+
+    Sandbox_WanderingZombies_MinHordeFleeRadius = "Rayon de fuite: minimum",
+    Sandbox_WanderingZombies_MinHordeFleeRadius_tooltip = "Reportez-vous à l'info-bulle Rayon de fuite pour plus d'informations.",
+    Sandbox_WanderingZombies_MaxHordeFleeRadius = "Rayon de fuite: maximum",
+    Sandbox_WanderingZombies_MaxHordeFleeRadius_tooltip = "Reportez-vous à l'info-bulle Rayon de fuite pour plus d'informations.",
+
+
+
+    Sandbox_WanderingZombiesPerformance = "Wandering Zombies: Performance"
+
+
+
+    Sandbox_WanderingZombies_UpdateZedLimit = "Limite de mise à jour (zombies)",
+    Sandbox_WanderingZombies_UpdateZedLimit_tooltip = "Nombre maximum de zeds pouvant être traités à chaque mise à jour<br>La mise à jour s'exécute une fois par image (trame)<br>À 60 ips (fps), une limite de 20 zeds signifierait que 1200 zeds par seconde sont traités",
+
+    Sandbox_WanderingZombies_UpdateMsLimit = "Limite de mise à jour (millisecondes)",
+    Sandbox_WanderingZombies_UpdateMsLimit_tooltip = "Durée maximale en millisecondes pendant laquelle la mise à jour peut s'exécuter<br>La mise à jour s'exécute une fois par image (trame)<br>16,67 ms est la limite de temps par image pour un 60 ips (fps) stable<br>Avec une limite de zombies faible, il ne devrait pas être nécessaire de modifier cette valeur<br>Les mises à jour de la Horde ont une limite codée en dur de 2 ms qui est distincte de cette valeur.",
+
+
+
+    Sandbox_WanderingZombiesOther = "Wandering Zombies: Autre",
+
+
+
+    Sandbox_WanderingZombies_TryStopVirtual = "Essayer Arrêt du Virtuel",
+    Sandbox_WanderingZombies_TryStopVirtual_tooltip = "Surveille le cheminement des zeds pour essayer de les empêcher de marcher en dehors de la zone active autour d'un joueur.",
+
+    Sandbox_WanderingZombies_HoursSurvived = "Heures survécues",
+    Sandbox_WanderingZombies_HoursSurvived_tooltip = "Nombre minimum d'heures dont un joueur a besoin pour survivre avant que les zeds ne s'attaquent à lui",
+}
